@@ -6,47 +6,29 @@
         <groupId>com.bigdata</groupId>
         <artifactId>demo</artifactId>
         <version>1.0</version>
-        <relativePath>../../</relativePath>
     </parent>
-    <groupId>org.stsffap</groupId>
-    <artifactId>cep-monitoring</artifactId>
-    <name>cep-monitoring</name>
+    <groupId>com.bigdatademo</groupId>
+    <artifactId>hbase</artifactId>
+    <name>hbasedemo</name>
     <version>1.0</version>
 
     <packaging>jar</packaging>
 
     <properties>
-        <flink.version>1.5.0</flink.version>
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.hbase/hbase-client -->
         <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-streaming-java_2.11</artifactId>
-            <version>${flink.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-cep_2.11</artifactId>
-            <version>${flink.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.18</version>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+            <version>2.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.32</version>
+            <version>1.2.47</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
-        <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm</artifactId>
-            <version>6.1.1</version>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -83,7 +65,7 @@
                             <transformers>
                                 <!-- add Main-Class to manifest file -->
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>org.stsffap.cep.monitoring.LonginCEPMonitoring</mainClass>
+                                    <mainClass></mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
