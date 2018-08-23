@@ -1,4 +1,4 @@
-package org.apache.hadoop;
+package hadoop;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;

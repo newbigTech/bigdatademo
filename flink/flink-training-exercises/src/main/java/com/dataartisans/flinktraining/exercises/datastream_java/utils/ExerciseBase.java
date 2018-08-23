@@ -12,8 +12,8 @@ public class ExerciseBase {
 	public static SinkFunction out = null;
 	public static int parallelism = 4;
 
-	public final static String pathToRideData = "nycTaxiRides.gz";
-	public final static String pathToFareData = "nycTaxiFares.gz";
+	public final static String pathToRideData = "flink/flink-training-exercises/dataset/nycTaxiRides.gz";
+	public final static String pathToFareData = "flink/flink-training-exercises/dataset/nycTaxiFares.gz";
 
 	public static SourceFunction<TaxiRide> rideSourceOrTest(SourceFunction<TaxiRide> source) {
 		if (rides == null) {

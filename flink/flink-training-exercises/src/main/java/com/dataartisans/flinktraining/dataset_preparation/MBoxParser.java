@@ -62,8 +62,10 @@ public class MBoxParser {
 
 		// parse parameters
 		ParameterTool params = ParameterTool.fromArgs(args);
-		String input = params.getRequired("input");
-		String output = params.getRequired("output");
+//		String input = params.getRequired("input");
+//		String output = params.getRequired("output");
+		String input = "flink/flink-training-exercises/dataset/flinkMails.gz";
+		String output = "flink/flink-training-exercises/dataset/";
 
 		// obtain execution environment
 		ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
@@ -174,7 +176,7 @@ public class MBoxParser {
 					if(line.length() < 24) {
 						return;
 					}
-					// parse time
+						// parse time
 					String dateStr = line.substring(line.length() - 24).replaceAll("\\s+", " ");
 					time = DateTime.parse(dateStr, inDF).toString(outDF);
 				}

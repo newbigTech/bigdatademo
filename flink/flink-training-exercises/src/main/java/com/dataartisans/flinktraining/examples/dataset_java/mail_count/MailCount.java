@@ -40,7 +40,8 @@ public class MailCount {
 
 		// parse parameters
 		ParameterTool params = ParameterTool.fromArgs(args);
-		String input = params.getRequired("input");
+//		String input = params.getRequired("input");
+		String input = "flink/flink-training-exercises/dataset/flinkMails.gz";
 
 		// obtain an execution environment
 		ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();

@@ -1,4 +1,4 @@
-package com.enniu.cloud.services.avro;
+package hadoop.avro;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -29,7 +29,7 @@ public class AvroWriteDemo {
             e.printStackTrace();
         }
     }
-    public static final String SCHEMA_JSON = "{\"namespace\": \"com.enniu.hadoop.avro\",\n" +
+    public static final String SCHEMA_JSON = "{\"namespace\": \"com.hadoop.avro\",\n" +
             "  \"type\": \"record\",\n" +
             "  \"name\": \"HdfsUser\",\n" +
             "  \"fields\": [\n" +

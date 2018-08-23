@@ -57,8 +57,8 @@ public class MailTFIDF {
 
 		// parse parameters
 		ParameterTool params = ParameterTool.fromArgs(args);
-		String input = params.getRequired("input");
-
+//		String input = params.getRequired("input");
+		String input = "flink/flink-training-exercises/dataset/flinkMails.gz";
 		// obtain execution environment
 		ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
 

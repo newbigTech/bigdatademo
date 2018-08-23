@@ -1,4 +1,4 @@
-package org.apache.hadoop.utils;
+package hadoop.utils;
 
 import com.google.common.collect.Maps;
 import org.apache.hadoop.mapreduce.Mapper;

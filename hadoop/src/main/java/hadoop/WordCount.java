@@ -1,4 +1,4 @@
-package org.apache.hadoop;
+package hadoop;
 
 import com.google.common.collect.Maps;
 import org.apache.hadoop.conf.Configuration;

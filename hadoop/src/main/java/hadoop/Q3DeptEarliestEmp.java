@@ -1,5 +1,6 @@
-package org.apache.hadoop;
+package hadoop;
 
+import hadoop.utils.CacheUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
@@ -15,7 +16,6 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
-import org.apache.hadoop.utils.CacheUtils;
 
 import java.io.IOException;
 import java.text.DateFormat;

@@ -61,15 +61,13 @@ public class LonginCEPMonitoring {
         private final MemoryStateBackend memoryStateBackend = new MemoryStateBackend();
 
         @Override
-        public CheckpointStreamFactory createStreamFactory(JobID jobId, String operatorIdentifier) throws IOException {
-            LOGGER.info("Method createStreamFactory called..");
-            return memoryStateBackend.createStreamFactory(jobId, operatorIdentifier);
+        public CompletedCheckpointStorageLocation resolveCheckpoint(String s) throws IOException {
+            return memoryStateBackend.resolveCheckpoint(s);
         }
 
         @Override
-        public CheckpointStreamFactory createSavepointStreamFactory(JobID jobId, String operatorIdentifier, @Nullable String targetLocation) throws IOException {
-            LOGGER.info("Method createSavepointStreamFactory called..");
-            return memoryStateBackend.createSavepointStreamFactory(jobId, operatorIdentifier, targetLocation);
+        public CheckpointStorage createCheckpointStorage(JobID jobID) throws IOException {
+            return memoryStateBackend.createCheckpointStorage(jobID);
         }
 
         @Override
